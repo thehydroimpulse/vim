@@ -1,3 +1,6 @@
+let mapleader = ","
+nmap ; :
+
 " Vundle {{{
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -53,7 +56,7 @@ set t_Co=256
 " NERDTree {{{
 let g:NERDTreeMapChangeRoot =  "`"
 
-nmap <Leader>] :NERDTreeTabsToggle<CR>
+nmap <Leader>d :NERDTreeTabsToggle<CR>
 nnoremap <Space>c :NERDTreeCWD<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=0
@@ -172,6 +175,10 @@ vnoremap < <<CR>gv
 map <Space>w <Plug>CamelCaseMotion_w
 map <Space>b <Plug>CamelCaseMotion_b
 map <Space>e <Plug>CamelCaseMotion_e
+" }}}
+
+" Personal Bundles {{
+Plugin 'terryma/vim-expand-region'
 " }}}
 
 colorscheme wombat256mod
